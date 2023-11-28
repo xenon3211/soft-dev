@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+#navbar {
+    overflow: hidden;
+   background: linear-gradient(20deg, #000, #6170cf, #ffeb3b, #03a9f4);
+   background-size: 150%;
+   backdrop-filter: blur(50px);
+    padding: 1.3rem 10%;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    text-align: left;
+
+  }
+   
+  #navbar a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 14px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 4px;
+  }
+   
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+   
+  #navbar a:hover {
+    background-color: dodgerblue;
+    border-bottom: 3px solid white;
+  }
+   
+  #navbar-right {
+    float: right;
+  }
+input{
+
+}
+.container{
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: black;
+    width:90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+    height: 100%;
+    background-color: black;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+
+}
+label{
+    display: inline-block;
+    height: 100%;
+    line-height: 60px;
+    margin: 0 25px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color .5s;
+}
+label:hover{
+    color: cyan;
+}
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-left: auto;
+}
+.pic{
+    position: relative;
+    height: 230px;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    
+}
+#check1:checked ~ .container .photo-gallery .pic{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked ~ .container .photo-gallery .magellan{
+    opacity: 1; 
+    transform: scale(1);
+    position: relative;
+}
+#check2:checked ~ .container .photo-gallery .pier
+#check2:checked ~ .container .photo-gallery .sto
+#check2:checked ~ .container .photo-gallery .Lapu
+#check2:checked ~ .container .photo-gallery .Malapascua{
+    opacity: 0; 
+    transform: scale(0);
+    position: absolute;
+}
